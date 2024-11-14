@@ -68,6 +68,11 @@ nav .nav-pills .nav-link {
   margin-right: 1.6rem;
   position: relative;
 }
+@media(max-width:992px){
+  nav .nav-pills .nav-link{
+    margin-right:0;
+  }
+}
 
 nav .nav-pills .nav-link.active {
   border: none;
