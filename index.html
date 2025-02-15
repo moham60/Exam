@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is Daniels portfolio" />
     <title>Exam</title>
     <!--favicon-->
     <link rel="shortcut icon" href="./imgs/favicon.ico" type="image/x-icon" />
     <!--bootstrap style-->
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <!--custom style-->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
     <!--bootstarp Icon-->
     <link
       rel="stylesheet"
@@ -26,9 +27,11 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!--start nav-->
+
     <nav
       id="navbar-example2"
       class="navbar navbar-expand-lg fixed-top px-3 pt-4">
@@ -47,7 +50,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="nav nav-pills ms-auto navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link " href="#home">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
@@ -74,15 +77,13 @@
     <!--end nav-->
 
     <div
-      data-bs-spy="scroll"
-      data-bs-target="#navbar-example2"
-      data-bs-offset="0"
-      class="scrollspy-example"
-      tabindex="0">
+     >
       <!--Start header-->
       <header
-        class="min-vh-100 d-flex align-items-center main-header text-center text-white"
-        id="home">
+        class="d-flex min-vh-100 justify-content-center align-items-center main-header text-center text-white"
+        id="home"
+        data-aos="zoom-out-down"
+        data-aos-duration="2000">
         <div class="container">
           <header>
             <h5 class="fs-1 text-white">Hello</h5>
@@ -103,15 +104,22 @@
       <!--start main-->
       <main>
         <!--start about-->
-        <section id="about" class="about section-padding">
+        <section
+          id="about"
+          class="about section-padding"
+          data-aos="zoom-out-down"
+          data-aos-duration="2000">
           <div class="container padding-section">
             <div class="row">
               <div class="col-lg-5">
-                <div class="image">
-                  <img class="img-fluid" src="./imgs/hero.jpg" alt="" />
+                <div
+                  class="image"
+                  data-aos="fade-right"
+                  data-aos-duration="2000">
+                  <img class="img-fluid" src="./imgs/hero.webp" alt="hero-img" loading="lazy" />
                 </div>
               </div>
-              <div class="col-lg-7">
+              <div class="col-lg-7" data-aos="fade-up" data-aos-duration="2000">
                 <article>
                   <header class="mb-4">
                     <h3>About Me.</h3>
@@ -183,13 +191,17 @@
         </section>
         <!--end about-->
         <!--Start Services-->
-        <section id="services" class="services section-padding main-bg">
+        <section
+          id="services"
+          class="services section-padding main-bg"
+          data-aos="zoom-out-down"
+          data-aos-duration="2000">
           <header class="title-section">
             <h3>Services.</h3>
           </header>
           <div class="container mt-5">
             <div class="row gy-4 text-center">
-              <div class="col-lg-4">
+              <div class="col-lg-4" data-aos="fade-up" data-aos-duration="2000">
                 <div class="box bg-white rounded">
                   <span class="icon rounded-circle">
                     <i class="fa fa-laptop" aria-hidden="true"></i>
@@ -201,7 +213,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4" data-aos="fade-up" data-aos-duration="2000">
                 <div class="box bg-white rounded">
                   <span class="icon rounded-circle">
                     <i class="fa fa-bullhorn" aria-hidden="true"></i>
@@ -213,7 +225,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4" data-aos="fade-up" data-aos-duration="2000">
                 <div class="box bg-white rounded">
                   <span class="icon rounded-circle">
                     <i class="fa fa-umbrella" aria-hidden="true"></i>
@@ -226,7 +238,7 @@
                 </div>
               </div>
 
-              <div class="col-lg-4">
+              <div class="col-lg-4" data-aos="fade-up" data-aos-duration="2000">
                 <div class="box bg-white rounded">
                   <span class="icon rounded-circle">
                     <i class="bi bi-gem"></i>
@@ -239,7 +251,7 @@
                 </div>
               </div>
 
-              <div class="col-lg-4">
+              <div class="col-lg-4" data-aos="fade-up" data-aos-duration="2000">
                 <div class="box bg-white rounded">
                   <span class="icon rounded-circle">
                     <i class="fa fa-television" aria-hidden="true"></i>
@@ -252,7 +264,10 @@
                 </div>
               </div>
 
-              <div class="col-lg-4">
+              <div
+                class="col-lg-4"
+                data-aos="zoom-out-down"
+                data-aos-duration="2000">
                 <div class="box bg-white rounded">
                   <span class="icon rounded-circle">
                     <i class="fa fa-camera" aria-hidden="true"></i>
@@ -269,7 +284,11 @@
         </section>
         <!--end Services-->
         <!--start portoflio-->
-        <section id="portoflio" class="portoflio section-padding">
+        <section
+          id="portoflio"
+          class="portoflio section-padding"
+          data-aos="zoom-out-down"
+          data-aos-duration="2000">
           <header class="title-section">
             <h3>Portfolio.</h3>
           </header>
@@ -338,62 +357,85 @@
                 role="tabpanel"
                 ariall>
                 <div class="row gy-4">
-                  <div class="col-lg-4 col-md-6">
-                    <div class="img">
-                      <img
-                        class="img-fluid"
-                        src="./imgs/portfolio/1.jpg"
-                        alt="" />
-                      <div class="overlay text-center">
-                        <div class="content">
-                          <h6>Web Design</h6>
-                          <div class="icons">
-                            <span
-                              ><i
-                                class="fa fa-chain-broken"
-                                aria-hidden="true"></i
-                            ></span>
-                            <span
-                              ><i
-                                class="fa fa-search-plus"
-                                aria-hidden="true"></i
-                            ></span>
+                  <div
+                    class="col-lg-4 col-md-6"
+                    data-aos="zoom-out-left"
+                    data-aos-duration="2000">
+                    <div
+                      class="border-0"
+                      data-bs-target="#exampleModalToggle"
+                      data-bs-toggle="modal">
+                      <div class="img">
+                        <img
+                          class="img-fluid"
+                          src="./imgs/portfolio/1.webp"
+                          alt="portfolio-img1" loading="lazy" />
+                        <div class="overlay text-center">
+                          <div class="content">
+                            <h6>Web Design</h6>
+                            <div class="icons">
+                              <span
+                                ><i
+                                  class="fa fa-chain-broken"
+                                  aria-hidden="true"></i
+                              ></span>
+                              <span
+                                ><i
+                                  class="fa fa-search-plus"
+                                  aria-hidden="true"></i
+                              ></span>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-4 col-md-6">
-                    <div class="img">
-                      <img
-                        class="img-fluid"
-                        src="./imgs/portfolio/2.jpg"
-                        alt="" />
-                      <div class="overlay text-center">
-                        <div class="content">
-                          <h6>Web Design</h6>
-                          <div class="icons">
-                            <span
-                              ><i
-                                class="fa fa-chain-broken"
-                                aria-hidden="true"></i
-                            ></span>
-                            <span
-                              ><i
-                                class="fa fa-search-plus"
-                                aria-hidden="true"></i
-                            ></span>
+                  <div
+                    class="col-lg-4 col-md-6"
+                    data-aos="zoom-out-left"
+                    data-aos-duration="2000">
+                    <div
+                      class="border-0"
+                      data-bs-target="#exampleModalToggle2"
+                      data-bs-toggle="modal">
+                      <div class="img">
+                        <img
+                          class="img-fluid"
+                          src="./imgs/portfolio/2.webp"
+                          alt="portfolio-img2" loading="lazy" />
+                        <div class="overlay text-center">
+                          <div class="content">
+                            <h6>Web Design</h6>
+                            <div class="icons">
+                              <span
+                                ><i
+                                  class="fa fa-chain-broken"
+                                  aria-hidden="true"></i
+                              ></span>
+                              <span
+                                ><i
+                                  class="fa fa-search-plus"
+                                  aria-hidden="true"></i
+                              ></span>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-4 col-md-6">
-                    <div class="img">
+                  <div
+                    class="col-lg-4 col-md-6"
+                    data-aos="zoom-out-left"
+                    data-aos-duration="2000">
+                     <div
+                      class="border-0"
+                      data-bs-target="#exampleModalToggle3"
+                      data-bs-toggle="modal">
+  <div class="img">
                       <img
                         class="img-fluid"
-                        src="./imgs/portfolio/3.jpg"
-                        alt="" />
+                        src="./imgs/portfolio/3.webp"
+                        alt="portfolio-img3" loading="lazy" />
                       <div class="overlay text-center">
                         <div class="content">
                           <h6>Web Design</h6>
@@ -412,13 +454,22 @@
                         </div>
                       </div>
                     </div>
+                     </div>
+                  
                   </div>
-                  <div class="col-lg-4 col-md-6">
+                  <div
+                    class="col-lg-4 col-md-6"
+                    data-aos="zoom-out-right"
+                    data-aos-duration="2000">
+                      <div
+                      class="border-0"
+                      data-bs-target="#exampleModalToggle4"
+                      data-bs-toggle="modal">
                     <div class="img">
                       <img
                         class="img-fluid"
-                        src="./imgs/portfolio/4.jpg"
-                        alt="" />
+                        src="./imgs/portfolio/4.webp"
+                        alt="portfolio-img4" loading="lazy" />
                       <div class="overlay text-center">
                         <div class="content">
                           <h6>Web Design</h6>
@@ -437,13 +488,21 @@
                         </div>
                       </div>
                     </div>
+                      </div>
                   </div>
-                  <div class="col-lg-4 col-md-6">
+                  <div
+                    class="col-lg-4 col-md-6"
+                    data-aos="zoom-out-right"
+                    data-aos-duration="2000">
+                      <div
+                      class="border-0"
+                      data-bs-target="#exampleModalToggle5"
+                      data-bs-toggle="modal">
                     <div class="img">
                       <img
                         class="img-fluid"
-                        src="./imgs/portfolio/5.jpg"
-                        alt="" />
+                        src="./imgs/portfolio/5.webp"
+                        alt="portfolio-img5" loading="lazy"/>
                       <div class="overlay text-center">
                         <div class="content">
                           <h6>Web Design</h6>
@@ -462,13 +521,21 @@
                         </div>
                       </div>
                     </div>
+                      </div>
                   </div>
-                  <div class="col-lg-4 col-md-6">
+                  <div
+                    class="col-lg-4 col-md-6"
+                    data-aos="zoom-out-right"
+                    data-aos-duration="2000">
+                      <div
+                      class="border-0"
+                      data-bs-target="#exampleModalToggle6"
+                      data-bs-toggle="modal">
                     <div class="img">
                       <img
                         class="img-fluid"
-                        src="./imgs/portfolio/6.jpg"
-                        alt="" />
+                        src="./imgs/portfolio/6.webp"
+                        alt="portfolio-img6" loading="lazy" />
                       <div class="overlay text-center">
                         <div class="content">
                           <h6>Web Design</h6>
@@ -487,6 +554,7 @@
                         </div>
                       </div>
                     </div>
+                      </div>
                   </div>
                 </div>
               </div>
@@ -497,11 +565,15 @@
                 aria-labelledby="pills-profile-tab">
                 <div class="row">
                   <div class="col-lg-4 col-md-6">
+                    <div
+                      class="border-0"
+                      data-bs-target="#exampleModalToggle6"
+                      data-bs-toggle="modal">
                     <div class="img">
                       <img
                         class="img-fluid"
-                        src="./imgs/portfolio/4.jpg"
-                        alt="" />
+                        src="./imgs/portfolio/4.webp"
+                        alt="portfolio-img4" loading="lazy" />
                       <div class="overlay text-center">
                         <div class="content">
                           <h6>Web Design</h6>
@@ -520,13 +592,18 @@
                         </div>
                       </div>
                     </div>
+                    </div>
                   </div>
                   <div class="col-lg-4 col-md-6">
+                    <div
+                      class="border-0"
+                      data-bs-target="#exampleModalToggle7"
+                      data-bs-toggle="modal">
                     <div class="img">
                       <img
                         class="img-fluid"
-                        src="./imgs/portfolio/6.jpg"
-                        alt="" />
+                        src="./imgs/portfolio/6.webp"
+                        alt="portfolio-img6" loading="lazy" />
                       <div class="overlay text-center">
                         <div class="content">
                           <h6>Web Design</h6>
@@ -544,6 +621,7 @@
                           </div>
                         </div>
                       </div>
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -555,11 +633,15 @@
                 aria-labelledby="pills-contact-tab">
                 <div class="row gy-4">
                   <div class="col-lg-4 col-md-6">
+                    <div
+                      class="border-0"
+                      data-bs-target="#exampleModalToggle7"
+                      data-bs-toggle="modal">
                     <div class="img">
                       <img
                         class="img-fluid"
-                        src="./imgs/portfolio/2.jpg"
-                        alt="" />
+                        src="./imgs/portfolio/2.webp"
+                        alt="portfolio-img2" loading="lazy" />
                       <div class="overlay text-center">
                         <div class="content">
                           <h6>Web Design</h6>
@@ -577,14 +659,19 @@
                           </div>
                         </div>
                       </div>
+                    </div>
                     </div>
                   </div>
                   <div class="col-lg-4 col-md-6">
+                        <div
+                      class="border-0"
+                      data-bs-target="#exampleModalToggle8"
+                      data-bs-toggle="modal">
                     <div class="img">
                       <img
                         class="img-fluid"
-                        src="./imgs/portfolio/5.jpg"
-                        alt="" />
+                        src="./imgs/portfolio/5.webp"
+                        alt="portfolio-img5" loading="lazy" />
                       <div class="overlay text-center">
                         <div class="content">
                           <h6>Web Design</h6>
@@ -603,6 +690,7 @@
                         </div>
                       </div>
                     </div>
+                        </div>
                   </div>
                 </div>
               </div>
@@ -613,11 +701,15 @@
                 aria-labelledby="pills-contact-tab">
                 <div class="row gy-4">
                   <div class="col-lg-4 col-md-6">
+                      <div
+                      class="border-0"
+                      data-bs-target="#exampleModalToggle9"
+                      data-bs-toggle="modal">
                     <div class="img">
                       <img
                         class="img-fluid"
-                        src="./imgs/portfolio/1.jpg"
-                        alt="" />
+                        src="./imgs/portfolio/1.webp"
+                        alt="portfolio-img1" loading="lazy" />
                       <div class="overlay text-center">
                         <div class="content">
                           <h6>Web Design</h6>
@@ -636,13 +728,18 @@
                         </div>
                       </div>
                     </div>
+                      </div>
                   </div>
                   <div class="col-lg-4 col-md-6">
+                      <div
+                      class="border-0"
+                      data-bs-target="#exampleModalToggle10"
+                      data-bs-toggle="modal">
                     <div class="img">
                       <img
                         class="img-fluid"
-                        src="./imgs/portfolio/3.jpg"
-                        alt="" />
+                        src="./imgs/portfolio/3.webp"
+                        alt="portfolio-img3" loading="lazy" />
                       <div class="overlay text-center">
                         <div class="content">
                           <h6>Web Design</h6>
@@ -661,13 +758,18 @@
                         </div>
                       </div>
                     </div>
+                      </div>
                   </div>
                   <div class="col-lg-4 col-md-6">
+                      <div
+                      class="border-0"
+                      data-bs-target="#exampleModalToggle11"
+                      data-bs-toggle="modal">
                     <div class="img">
                       <img
                         class="img-fluid"
-                        src="./imgs/portfolio/5.jpg"
-                        alt="" />
+                        src="./imgs/portfolio/5.webp"
+                        alt="portfolio-img5" loading="lazy" />
                       <div class="overlay text-center">
                         <div class="content">
                           <h6>Web Design</h6>
@@ -694,11 +796,18 @@
         </section>
         <!--end portoflio-->
         <!--start Testimonials-->
-        <section id="testimonials" class="testimonials section-padding main-bg">
+        <section
+          id="testimonials"
+          class="testimonials section-padding main-bg"
+          data-aos="zoom-out-down"
+          data-aos-duration="2000">
           <header class="title-section">
             <h3>Testimonials.</h3>
           </header>
-          <div class="container mt-5 text-center">
+          <div
+            class="container mt-5 text-center"
+            data-aos="flip-right"
+            data-aos-duration="2000">
             <div
               id="carouselExampleCaptions"
               class="carousel slide"
@@ -706,10 +815,10 @@
               <div class="carousel-inner">
                 <div class="carousel-item active text-white">
                   <img
-                    src="./imgs/testi-1.jpg"
+                    src="./imgs/testi-1.webp"
                     class="rounded-circle my-3"
-                    alt="..."
-                    style="width: 80px; height: 80px" />
+                    alt="testi-1"
+                    style="width: 80px; height: 80px" loading="lazy" />
                   <p class="mb-4">
                     Lorem Ipsum has been the industry's standard dummy text ever
                     since the when an unknown printer took a galley of type and
@@ -722,10 +831,10 @@
                 </div>
                 <div class="carousel-item text-white">
                   <img
-                    src="./imgs/testi-2.jpg"
+                    src="./imgs/testi-2.webp"
                     class="rounded-circle my-3"
-                    alt="..."
-                    style="width: 80px; height: 80px" />
+                    alt="testi-2"
+                    style="width: 80px; height: 80px" loading="lazy" />
                   <p class="mb-4">
                     Lorem Ipsum has been the industry's standard dummy text ever
                     since the when an unknown printer took a galley of type and
@@ -738,10 +847,10 @@
                 </div>
                 <div class="carousel-item text-white">
                   <img
-                    src="./imgs/testi-3.jpg"
+                    src="./imgs/testi-3.webp"
                     class="rounded-circle my-3"
-                    alt="..."
-                    style="width: 80px; height: 80px" />
+                    alt="testi-3"
+                    style="width: 80px; height: 80px" loading="lazy" />
                   <p class="mb-4">
                     Lorem Ipsum has been the industry's standard dummy text ever
                     since the when an unknown printer took a galley of type and
@@ -777,7 +886,11 @@
         </section>
         <!--end Testimonials-->
         <!--start clients-->
-        <section id="clients" class="clients section-padding">
+        <section
+          id="clients"
+          class="clients section-padding"
+          data-aos="zoom-out-down"
+          data-aos-duration="2000">
           <div class="container text-center">
             <div class="row gy-3">
               <div class="col-md-3">
@@ -787,7 +900,10 @@
                   <p>Happy Customers</p>
                 </div>
               </div>
-              <div class="col-md-3">
+              <div
+                class="col-md-3"
+                data-aos="flip-down"
+                data-aos-duration="2000">
                 <div class="inner">
                   <span class="icon"
                     ><i class="fa fa-thumbs-up" aria-hidden="true"></i
@@ -796,7 +912,10 @@
                   <p>Complete Projects</p>
                 </div>
               </div>
-              <div class="col-md-3">
+              <div
+                class="col-md-3"
+                data-aos="flip-down"
+                data-aos-duration="2000">
                 <div class="inner">
                   <span class="icon"
                     ><i class="fa fa-bullhorn" aria-hidden="true"></i
@@ -805,7 +924,10 @@
                   <p>Lines Of Code</p>
                 </div>
               </div>
-              <div class="col-md-3">
+              <div
+                class="col-md-3"
+                data-aos="flip-down"
+                data-aos-duration="2000">
                 <div class="inner">
                   <span class="icon">
                     <i class="fa-solid fa-cloud-arrow-down"></i>
@@ -820,15 +942,22 @@
         </section>
         <!--end clients-->
         <!--start team-->
-        <section id="team" class="team section-padding main-bg">
+        <section
+          id="team"
+          class="team section-padding main-bg"
+          data-aos="zoom-out-down"
+          data-aos-duration="2000">
           <header class="title-section">
             <h3>Our Team.</h3>
           </header>
           <div class="container text-center">
             <div class="row gy-3">
-              <div class="col-lg-4 col-md-6 box">
+              <div
+                class="col-lg-4 col-md-6 box"
+                data-aos="fade-right"
+                data-aos-duration="2000">
                 <div class="inner">
-                  <img class="w-100" src="./imgs/1.jpg" alt="" />
+                  <img class="w-100" src="./imgs/1.webp" alt="team-1" loading="lazy" />
                   <div class="overlay">
                     <div class="icons">
                       <span>
@@ -851,9 +980,12 @@
                   <h5 class="text-white text-uppercase">Front-End Developer</h5>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 box">
+              <div
+                class="col-lg-4 col-md-6 box"
+                data-aos="fade-right"
+                data-aos-duration="2000">
                 <div class="inner">
-                  <img class="w-100" src="./imgs/2.jpg" alt="" />
+                  <img class="w-100" src="./imgs/2.webp" alt="team2" loading="lazy" />
                   <div class="overlay">
                     <div class="icons">
                       <span>
@@ -877,9 +1009,12 @@
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6 box">
+              <div
+                class="col-lg-4 col-md-6 box"
+                data-aos="fade-right"
+                data-aos-duration="2000">
                 <div class="inner">
-                  <img class="w-100" src="./imgs/1.jpg" alt="" />
+                  <img class="w-100" src="./imgs/1.webp" alt="team3" loading="lazy" />
                   <div class="overlay">
                     <div class="icons">
                       <span>
@@ -907,13 +1042,20 @@
         </section>
         <!--end team-->
         <!--start contact-->
-        <section id="contact" class="contact section-padding">
+        <section
+          id="contact"
+          class="contact section-padding"
+          data-aos="fade-up"
+          data-aos-duration="2000">
           <header class="title-section">
             <h3>Contact Us.</h3>
           </header>
           <div class="container">
             <div class="row mb-5 text-center">
-              <div class="col-lg-4">
+              <div
+                class="col-lg-4"
+                data-aos="flip-left"
+                data-aos-duration="2000">
                 <div class="inner">
                   <span class="icon"
                     ><i class="fa fa-location-arrow" aria-hidden="true"></i
@@ -922,7 +1064,10 @@
                   <p>6834 Hollywood Blvd - Los Angeles CA</p>
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div
+                class="col-lg-4"
+                data-aos="fade-right"
+                data-aos-duration="2000">
                 <div class="inner">
                   <span class="icon"
                     ><i class="fa fa-envelope" aria-hidden="true"></i
@@ -931,7 +1076,10 @@
                   <p>Support@website.com</p>
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div
+                class="col-lg-4"
+                data-aos="fade-down"
+                data-aos-duration="2000">
                 <div class="inner">
                   <span class="icon"
                     ><i class="fa fa-phone" aria-hidden="true"></i
@@ -943,15 +1091,24 @@
             </div>
             <form action="">
               <div class="row gy-3">
-                <div class="col-md-6">
+                <div
+                  class="col-md-6"
+                  data-aos="fade-down"
+                  data-aos-duration="2000">
                   <input type="text" class="w-100" placeholder="Name" />
                 </div>
-                <div class="col-md-6">
+                <div
+                  class="col-md-6"
+                  data-aos="fade-down"
+                  data-aos-duration="2000">
                   <input type="text" class="w-100" placeholder="Email" />
                 </div>
               </div>
               <div class="row mt-3">
-                <div class="col-12">
+                <div
+                  class="col-12"
+                  data-aos="fade-down"
+                  data-aos-duration="2000">
                   <textarea
                     rows="4"
                     name=""
@@ -970,22 +1127,261 @@
       <!--end main-->
     </div>
     <!--start footer-->
-    <footer class="text-center">
+    <footer class="text-center" >
       <div class="cotainer">
         <p class="">Copy Right 2018 © By Daniels All Rights Reserved</p>
       </div>
     </footer>
+    <div
+      class="modal fade"
+      id="exampleModalToggle"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel"
+      tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered ">
+        <div class="modal-content">
+          
+            
+          
+          <div class="modal-body ">
+            
+              <div class="img position-relative">
+ <img  src="./imgs/portfolio/1.webp" alt="portfolio-img1" loading="lazy">
+ <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+              </div>
+           
+          </div>
+         
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="exampleModalToggle2"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel2"
+      tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          
+          <div class="modal-body">
+            <div class="img position-relative">
+ <img  src="./imgs/portfolio/2.webp" alt="portfolio-img2" loading="lazy">
+ <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+              </div>
+          </div>
+       
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="exampleModalToggle3"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel"
+      tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+         
+          <div class="modal-body">
+                        <div class="img position-relative">
+ <img  src="./imgs/portfolio/3.webp" alt="portfolio-img3" loading="lazy">
+ <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+              </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="exampleModalToggle4"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel"
+      tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+         
+          <div class="modal-body">
+                        <div class="img position-relative">
+ <img  src="./imgs/portfolio/4.webp" alt="portfolio-img4" loading="lazy">
+ <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+              </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="exampleModalToggle5"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel"
+      tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          
+          <div class="modal-body">
+                        <div class="img position-relative">
+ <img  src="./imgs/portfolio/5.webp" alt="portfolio-img5" loading="lazy">
+ <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+              </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="exampleModalToggle6"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel"
+      tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        
+          <div class="modal-body">
+                        <div class="img position-relative">
+ <img  src="./imgs/portfolio/6.webp" alt="portfolio-img6" loading="lazy">
+ <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+              </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="exampleModalToggle7"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel"
+      tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+         
+          <div class="modal-body">
+                        <div class="img position-relative">
+ <img  src="./imgs/portfolio/3.webp" alt="portfolio-img3" loading="lazy">
+ <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+              </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="exampleModalToggle8"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel"
+      tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body"></div>
+          
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="exampleModalToggle9"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel"
+      tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body"></div>
+          
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="exampleModalToggle10"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel"
+      tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body"></div>
+          
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="exampleModalToggle11"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel"
+      tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body"></div>
+          
+        </div>
+      </div>
+    </div>
     <!--start footer-->
     <script src="./js/bootstrap.min.js"></script>
-    <script>
-      let nav = document.querySelector("nav");
-      window.addEventListener("scroll", function () {
-        if (window.scrollY >= 250) {
-          nav.style.backgroundColor = "black";
-        } else {
-          nav.style.backgroundColor = "transparent";
-        }
-      });
-    </script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
